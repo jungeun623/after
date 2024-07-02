@@ -1,0 +1,245 @@
+@charset "uft-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul,li{
+    list-style: none;
+}
+/* 전체 레이아웃 */
+.wrap{
+    position: relative;
+    display: block;
+    width: 1000px;
+    height: 650px;
+    margin: 0 auto;
+}
+/* 왼쪽 */
+.left{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 650px;
+    background-color: aquamarine;
+    float: left;
+}
+/* 로고 */
+.logo{
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+    padding: 35px 30px;
+}
+.logo a img{
+    width: 100%;
+}
+/* 메뉴 */
+.menu{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(184, 183, 182);
+    padding: 10px 10px;
+}
+.navi{
+    position: relative;
+    display: block;
+    background-color: cadetblue;
+    text-align: center;
+}
+.navi > li{
+    background-color: rgb(163, 108, 108);
+}
+.navi > li > a{
+    line-height: 40px;
+    background-color: rgb(85, 85, 85);
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+.navi > li > a:hover{
+    background-color: rgb(204, 204, 204);
+    color: darkgreen;
+}
+.navi > li > a:hover + .submenu{
+    display: block;
+}
+/* submenu */
+.submenu{
+    position: relative;
+    display: none;
+}
+.submenu > li > a{
+    line-height: 40px;
+    background-color: rgb(91, 172, 125);
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+/* 오른쪽 */
+.right{
+    position: relative;
+    display: block;
+    width: 800px;
+    height: 650px;
+    background-color: blanchedalmond;
+    float: left;
+}
+/* slide img */
+.slideimg{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 350px;
+}
+.slideimg a {
+    width: 100%;
+    height: 100%;
+    
+}
+.slideimg a img {
+    width: 100%;
+    height: 100%;
+}
+.imgText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    color: #fff;
+    display: block;
+}
+/* contents */
+.contents{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+.contents h3{
+    background-color: darkgreen;
+    width: 100px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+/* 공지사항 */
+.notice{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+.notice-list li{
+    background-color: rgb(255, 255, 255);
+}
+.notice-list li a{
+    display: inline-block;
+    line-height: 30px;
+    float: left;
+    font-size: 13px;
+    width: 100%;
+}
+.notice-list span{
+    float: right;
+}
+/* 갤러리 */
+.gallery{
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+.gallery-list{
+    width: 100%;
+}
+.gallery-list li{
+    width: calc(100% / 3);
+    float: left;
+    background-color: rgb(112, 35, 175);
+    padding: 0 5px;
+    margin-top: 10px;
+}
+.gallery-list li a img{
+    width: 100%;
+    height: 100%;
+}
+/* 바로가기 */
+.shortcut{
+    position: relative;
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    padding: 10px;
+    display: block;
+}
+.shortcut a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.shortcut a img{
+    width: 100%;
+    height: 100%;
+}
+.shortcut-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+/* footer */
+.footer{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: darkkhaki;
+}
+.ft-left{
+    width: 550px;
+    height: 100%;
+    line-height: 100px;
+    padding-left: 50px;
+    background-color: aquamarine;
+    float: left;
+}
+.ft-right{
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+.ft-right-top{
+    width: 100%;
+    height: 60px;
+    background-color: darkorange;
+    padding: 0 30px;
+}
+.ft-right-top li{
+    width: calc(100% / 3);
+    padding: 10px;
+    background-color: azure;
+    float: left;
+    height: 100%;
+}
+.ft-right-top li a img{
+    width: 100%;
+    height: 100%;
+}
+.ft-right-bt{
+    padding: 5px 20px;
+}
+.ft-right-bt select{
+    width: 100%;
+    padding: 4px 0;
+    margin-top: 2px;
+}
